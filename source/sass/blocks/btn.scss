@@ -46,6 +46,7 @@
 
     @include active {
       background: $gradient-button-hover;
+
       span {
         opacity: 0.7;
       }
