@@ -12,8 +12,6 @@
   gap: 68px;
   max-width: 62rem;
   text-align: right;
-  margin: auto;
-
 
   @include vp-1365 {
     grid-template-columns: 1fr 2fr;
