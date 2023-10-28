@@ -1,17 +1,31 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
-
+  padding: 27px 56px;
   color: $color-default-white;
-
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
   background-color: $color-neon-blue;
   border: none;
   cursor: pointer;
-
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &--primary {
+    background-color: transparent;
+    border: 2px solid $color-default-white;
+
+    @include hover-focus {
+      background-color: $color-default-white;
+      color: $secondary-color-text-dark;
+    }
+
+    @include active {
+      background-color: $color-default-white;
+      color: $accent-color-text-dark;
+    }
   }
 
   &:disabled {
@@ -20,7 +34,25 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+  &--secondary {
+    background-color: transparent;
+    border: 2px solid $accent-button-border-dark;
+    color: $accent-color-text-dark;
+
+    @include hover-focus {
+      background: $gradient-button-hover;
+      color: $color-default-white;
+    }
+
+    @include active {
+      background: $gradient-button-hover;
+      span {
+        opacity: 0.7;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
   }
 }
