@@ -16,14 +16,19 @@ $accent-color-text-dark:            #102654;
 $accent-button-border-dark:         #102654;
 $secondary-button-border-dark:      #1c3374;
 $secondary-color-text-dark:         #103aae;
-$background-accent-light:           #f8f9fc;
-
+$background-white:                  #ffffff;
+$background-light:                  #f8f9fc;
+$background-banners:                #ed0233;
+$background-accent-dark:            #102654;
+$background-secondary-dark:         #1c3374;
+$background-black:                  #030a1a;
+$background-overlay:                rgba(20, 54, 122, 0.5);
+$accent-border-button:              rgba(237, 2, 51, 0.2);
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $gradient-secondary-text:           linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
 $gradient-hero-ds:                  linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
-$gradient-video:                    rgba(20, 54, 122, 0.5);
 $gradient-button-hover:             linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
 // Typography
 // ---------------------------------
