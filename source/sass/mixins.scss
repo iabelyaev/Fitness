@@ -4,6 +4,19 @@
   }
 }
 
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  &.focus-visible:focus {
+    @content;
+  }
+}
+
+
 @mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
@@ -19,22 +32,30 @@
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active:not(.focus-visible) {
     @content;
   }
 }
 
-@mixin hover-focus {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
-  }
+// Также mixin active
+//@mixin active {
+//  &.focus-visible:active {
+//    @content;
+//  }
+//}
 
-  &.focus-visible:focus {
-    @content;
-  }
-}
+//Устаревший mixin hover-focus
+//@mixin hover-focus {
+//  @media (hover: hover) {
+//    &:hover:not(.focus-visible) {
+//      @content;
+//    }
+//  }
+//
+//  &.focus-visible:focus {
+//    @content;
+//  }
+//}
 
 // Desktop first
 
@@ -46,6 +67,12 @@
 
 @mixin vp-1439 {
   @media (max-width: ($vp-1440 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 1px)) {
     @content;
   }
 }
