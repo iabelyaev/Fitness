@@ -1,6 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+// import {initVideo}from './modules/gym-video/video.js';
+import {initSlider} from './modules/slider/slider.js';
+import {iniSwiperSlider} from "./modules/slider-games/ss.js";
 
 // ---------------------------------
 
@@ -21,6 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    // initVideo();
+    initSlider();
+    iniSwiperSlider();
   });
 });
 

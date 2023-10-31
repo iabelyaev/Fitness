@@ -1,89 +1,127 @@
-//.video {
-//  position: relative;
-//  width: 22.5rem;
-//  min-height: 228px;
-//  bottom: 50px;
-//  right: 50px;
-//
-//  @include vp-1365 {
-//    left: 50%;
-//    transform: translateX(-50%);
-//  }
-//
-//  @include vp-767 {
-//    width: 100vw;
-//    margin-left: -15px;
-//    left: 0;
-//    right: 0;
-//    transform: translateX(0);
-//  }
-//
-//
-//  img {
-//    position: relative;
-//    height: 100%;
-//  }
-//
-//
-//  button {
-//    display: inline-block;
-//    position: absolute;
-//    left: 50%;
-//    top: 50%;
-//    transform: translate(-50%, -50%);
-//    width: 6.25rem;
-//    height: 6.25rem;
-//    border-radius: 50%;
-//    background-color: transparent;
-//    padding: 0;
-//    color: $color-default-white;
-//    border: 2px solid $accent-border-button;
-//    z-index: 11;
-//    cursor: pointer;
-//
-//    &::before {
-//      content: "";
-//      position: absolute;
-//      left: 50%;
-//      top: 50%;
-//      transform: translate(-50%, -50%);
-//      display: block;
-//      width: 4.5rem;
-//      height: 4.5rem;
-//      border-radius: 50%;
-//      background: $gradient-button-hover;
-//      z-index: -1;
-//    }
-//
-//    @include hover-focus {
-//      border-color: $accent-button-border-dark;
-//      color: $accent-button-border-dark;
-//      &::before {
-//        background: $color-default-white;
-//      }
-//    }
-//
-//    svg {
-//      width: 17px;
-//      height: 17px;
-//    }
-//
-//    //@include hover-focus {
-//    //
-//    //}
-//  }
-//}
-//
-//.video__overlay {
-//  position: absolute;
-//  width: 100%;
-//  height: 100%;
-//  background: $background-overlay;
-//  z-index: 1;
-//
-//
-//  @include vp-767 {
-//    width: 100vw;
-//    margin-left: -15px;
-//  }
-//}
+.video {
+  position: absolute;
+  width: 22.5rem;
+  min-height: 228px;
+  bottom: 0;
+  left: -20px;
+  background-color: $background-overlay-sapphire;
+
+
+  @include vp-1365 {
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 167px;
+  }
+
+  @include vp-767 {
+    left: 0;
+    transform: translate(0, 0);
+    width: 100vw;
+    margin-left: -15px;
+    position: static;
+  }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $background-overlay;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  iframe {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video__button {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  color: $color-default-white;
+  border: 2px solid $accent-border-button;
+  z-index: 11;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: $gradient-button-hover;
+    z-index: -1;
+
+
+    @include vp-1365 {
+      width: 3.25rem;
+      height: 3.25rem;
+    }
+  }
+
+  @include vp-1365 {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  svg {
+    @include vp-1365 {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
+
+  @include hover-focus {
+    border-color: $accent-button-border-dark;
+    color: $accent-button-border-dark;
+
+    &::before {
+      background: $color-default-white;
+    }
+  }
+
+  @include active {
+    border-color: $accent-button-border-dark;
+    color: $accent-button-border-dark;
+
+    &::before {
+      background: $color-default-white;
+      width: 3.625rem;
+      height: 3.625rem;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.4;
+    border-color: $accent-button-border-dark;
+    color: $accent-button-border-dark;
+
+    &::before {
+      background: $color-default-white;
+    }
+  }
+}

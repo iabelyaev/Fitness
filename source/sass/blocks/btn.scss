@@ -12,6 +12,7 @@
   border: none;
   cursor: pointer;
   transition: opacity $trans-default;
+  outline: none;
 
   &--primary {
     background-color: transparent;
@@ -42,6 +43,8 @@
     @include hover-focus {
       background: $gradient-button-hover;
       color: $color-default-white;
+      border-image: $gradient-button-hover;
+      border-image-slice: 1;
     }
 
     @include active {
