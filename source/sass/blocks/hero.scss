@@ -10,8 +10,6 @@
   }
 }
 
-//Content
-
 .hero__content {
   display: grid;
   grid-template-columns: 39% 1fr;
@@ -30,8 +28,6 @@
   }
 }
 
-//Text
-
 .hero__text {
   display: grid;
   grid-template-columns: 113px 1fr;
@@ -48,8 +44,6 @@
     column-gap: 6px;
   }
 }
-
-//City
 
 .hero__city {
   font-family: $ff-alumni;
@@ -74,8 +68,6 @@
     margin-bottom: 14px;
   }
 }
-
-//Title
 
 .hero__title {
   font-family: $ff-alumni;
@@ -104,8 +96,6 @@
   }
 }
 
-//Description
-
 .hero__description {
   font-size: 14px;
   font-weight: 400;
@@ -124,8 +114,6 @@
     margin-bottom: 2rem;
   }
 }
-
-//Button
 
 .hero__button {
   max-width: 230px;
@@ -149,8 +137,6 @@
     max-width: 100%;
   }
 }
-
-//Picture
 
 .hero__picture {
   display: block;

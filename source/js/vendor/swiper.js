@@ -1,7 +1,7 @@
 const swiper = () => {
   /**
    * Swiper 8.4.7
-   * Most modern mobile touch slider and framework with hardware accelerated transitions
+   * Most modern mobile touch tabs and framework with hardware accelerated transitions
    * https://swiperjs.com
    *
    * Copyright 2014-2023 Vladimir Kharlampidi
@@ -5605,7 +5605,7 @@ const swiper = () => {
           // Prevent if time between scrolls is below configured threshold
           return false;
         } // If the movement is NOT big enough and
-        // if the last time the user scrolled was too close to the current one (avoid continuously triggering the slider):
+        // if the last time the user scrolled was too close to the current one (avoid continuously triggering the tabs):
         //   Don't go any further (avoid insignificant scroll movement).
 
 
@@ -5613,15 +5613,15 @@ const swiper = () => {
           // Return false as a default
           return true;
         } // If user is scrolling towards the end:
-        //   If the slider hasn't hit the latest slide or
-        //   if the slider is a loop and
-        //   if the slider isn't moving right now:
+        //   If the tabs hasn't hit the latest slide or
+        //   if the tabs is a loop and
+        //   if the tabs isn't moving right now:
         //     Go to next slide and
         //     emit a scroll event.
         // Else (the user is scrolling towards the beginning) and
-        // if the slider hasn't hit the first slide or
-        // if the slider is a loop and
-        // if the slider isn't moving right now:
+        // if the tabs hasn't hit the first slide or
+        // if the tabs is a loop and
+        // if the tabs isn't moving right now:
         //   Go to prev slide and
         //   emit a scroll event.
 
@@ -5722,9 +5722,9 @@ const swiper = () => {
           recentWheelEvents.push(newEvent); // If there is at least one previous recorded event:
           //   If direction has changed or
           //   if the scroll is quicker than the previous one:
-          //     Animate the slider.
+          //     Animate the tabs.
           // Else (this is the first time the wheel is moved):
-          //     Animate the slider.
+          //     Animate the tabs.
 
           if (prevEvent) {
             if (newEvent.direction !== prevEvent.direction || newEvent.delta > prevEvent.delta || newEvent.time > prevEvent.time + 150) {

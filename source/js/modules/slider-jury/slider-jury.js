@@ -1,9 +1,10 @@
-import swiper from "../../vendor/swiper.js";
-export const iniSwiperSlider = () => {
-  const swiperElement = document.querySelector('[data-swiper]')
+import Swiper from '../../../js/vendor/swiper.js';
+
+export const initSwiperSlider = () => {
+  const swiperElement = document.querySelector('[data-swiper]');
   const swiperSlider = new Swiper(swiperElement, {
     loop: true,
-    effect: 'slider',
+    effect: 'tabs',
     slidesPerView: 4,
     direction: 'horizontal',
     navigation: {
@@ -14,22 +15,22 @@ export const iniSwiperSlider = () => {
     breakpoints: {
       1366: {
         slidesPerView: 4,
-        spaceBetween: 40
+        spaceBetween: 40,
       },
 
       1120: {
         slidesPerView: 3,
-        spaceBetween: 70
+        spaceBetween: 70,
       },
 
       768: {
         slidesPerView: 2,
-        spaceBetween: 32
+        spaceBetween: 32,
       },
       0: {
         slidesPerView: 1,
-        spaceBetween: 32
-      }
-    }
-  })
-}
+        spaceBetween: 32,
+      },
+    },
+  });
+};

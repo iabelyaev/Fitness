@@ -38,7 +38,6 @@
   }
 
   iframe {
-    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -110,8 +109,8 @@
 
     &::before {
       background: $color-default-white;
-      width: 3.625rem;
-      height: 3.625rem;
+      width: 3.62rem;
+      height: 3.62rem;
     }
   }
 

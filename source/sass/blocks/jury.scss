@@ -21,6 +21,7 @@
 }
 
 .jury__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -38,7 +39,7 @@
     width: 268px;
   }
 
-  @include  vp-767 {
+  @include vp-767 {
     min-width: 226px;
     min-height: 274px;
   }
@@ -51,15 +52,6 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-
-  //&::before {
-  //  content: "";
-  //  position: absolute;
-  //  left: 0;
-  //  bottom: -100%;
-  //  width: 100%;
-  //  height: 100%;
-  //}
 
   img {
     object-position: top;
@@ -77,6 +69,11 @@
   margin: 0;
   margin-bottom: 8px;
   color: $color-default-white;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .jury__details {
@@ -88,6 +85,7 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   padding: 45px 41px 50px 42px;
+  overflow: hidden;
 
 
   p {
@@ -146,15 +144,17 @@
   border: 0;
   bottom: 20%;
   transform: translateY(-20%);
+  cursor: pointer;
 
   &--prev {
-    left: 3%;
+    left: 5%;
 
     svg {
       rotate: 180deg;
     }
   }
+
   &--next {
-    right: 3%;
+    right: 5%;
   }
 }
