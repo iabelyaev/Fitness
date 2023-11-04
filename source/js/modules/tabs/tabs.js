@@ -5,14 +5,14 @@ export const initTabs = () => {
 
   const priceObj = {
     sixMonth: {
-      1: '30 000',
-      2: '10 200',
-      3: '16 200',
+      1: '30000',
+      2: '10200',
+      3: '16200',
     },
     twelveMonth: {
-      1: '60 000',
-      2: '20 400',
-      3: '32 400',
+      1: '60000',
+      2: '20400',
+      3: '32400',
     },
     oneMonth: {
       1: '5000',
@@ -20,18 +20,13 @@ export const initTabs = () => {
       3: '2700',
     },
   };
+
   const setPrice = (mont) => {
     const priceData = Object.values(priceObj[mont]);
     price.forEach((item, index) => {
       const currentPrice = priceData[index];
       item.setAttribute('data-price', currentPrice);
-
-      const priceNumber = document.createElement('b');
-      const elementSpan = document.createElement('span');
-      priceNumber.textContent = currentPrice;
-      elementSpan.textContent = '₽';
-      priceNumber.append(elementSpan);
-      item.appendChild(priceNumber);
+      item.querySelector('b').textContent = currentPrice;
     });
   };
   const priceChange = (tab) => {
@@ -55,6 +50,7 @@ export const initTabs = () => {
     evt.target.classList.add('is-active');
     priceChange(evt.target);
   };
+
   setPrice('oneMonth');
 
   controls.forEach((item) => {
