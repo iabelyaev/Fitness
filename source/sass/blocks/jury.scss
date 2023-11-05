@@ -1,3 +1,12 @@
+.jury {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.jury__inner {
+  position: relative;
+}
+
 .jury__title {
   font-family: $ff-alumni;
   font-size: 54px;
@@ -85,7 +94,6 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   padding: 45px 41px 50px 42px;
-  overflow: hidden;
 
 
   p {
@@ -102,6 +110,7 @@
 .jury__item:hover .jury__details {
   bottom: 0;
   background-color: rgba(16, 38, 84, 0.89);
+  overflow: scroll;
 }
 
 .jury__details-list {
@@ -137,8 +146,8 @@
 
 .jury__button {
   position: absolute;
-  width: 16px;
-  height: 32px;
+  width: 56px;
+  height: 56px;
   background-color: transparent;
   padding: 0;
   border: 0;
@@ -148,7 +157,7 @@
 
   &--prev {
     left: 5%;
-
+    transform: translateX(-5%);
     svg {
       rotate: 180deg;
     }
@@ -156,5 +165,11 @@
 
   &--next {
     right: 5%;
+    transform: translateX(-5%);
+  }
+
+  @include hover-focus {
+    outline: 1px solid $accent-color-text-dark;
+    border-radius: 50%;
   }
 }

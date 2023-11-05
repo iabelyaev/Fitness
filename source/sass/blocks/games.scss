@@ -95,6 +95,7 @@
 .games__advertisement-btn {
   justify-content: center;
   width: 100%;
+  user-select: none;
 
 
   @include vp-767 {

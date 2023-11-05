@@ -1,13 +1,5 @@
 .hero {
-  min-height: 730px;
-
-  @include vp-1365 {
-    min-height: 574px;
-  }
-
-  @include vp-767 {
-    min-height: 461px;
-  }
+  padding-bottom: 120px;
 }
 
 .hero__content {
@@ -124,7 +116,6 @@
   padding-right: 54px;
   padding-left: 54px;
   padding-bottom: 23px;
-  user-select: none;
 
   @include vp-1365 {
     padding: 21px 31px;
