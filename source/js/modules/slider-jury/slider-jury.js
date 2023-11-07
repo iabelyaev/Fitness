@@ -4,7 +4,7 @@ export const initSwiperSlider = () => {
   const swiperElement = document.querySelector('[data-swiper]');
   const swiperSlider = new Swiper(swiperElement, {
     loop: true,
-    effect: 'tabs',
+    effect: 'tabsss',
     slidesPerView: 4,
     direction: 'horizontal',
     navigation: {

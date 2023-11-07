@@ -43,6 +43,7 @@
   overflow: hidden;
   min-width: 260px;
   min-height: 294px;
+  outline: 0;
 
   @include vp-1365 {
     width: 268px;
@@ -51,6 +52,14 @@
   @include vp-767 {
     min-width: 226px;
     min-height: 274px;
+  }
+
+  @include hover-focus {
+    .jury__details {
+      bottom: 0;
+      background-color: rgba(16, 38, 84, 0.89);
+      overflow: scroll;
+    }
   }
 }
 
@@ -107,11 +116,9 @@
   }
 }
 
-.jury__item:hover .jury__details {
-  bottom: 0;
-  background-color: rgba(16, 38, 84, 0.89);
-  overflow: scroll;
-}
+//.jury__item:hover .jury__details {
+//
+//}
 
 .jury__details-list {
   margin: 0;
@@ -158,6 +165,7 @@
   &--prev {
     left: 5%;
     transform: translateX(-5%);
+
     svg {
       rotate: 180deg;
     }

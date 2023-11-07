@@ -171,7 +171,7 @@ function applyFocusVisiblePolyfill(scope) {
   }
 
   /**
-   * If the user changes tabs, keep track of whether or not the previously
+   * If the user changes tabsss, keep track of whether or not the previously
    * focused element had .focus-visible.
    * @param {Event} e
    */

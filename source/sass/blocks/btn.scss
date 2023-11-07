@@ -29,7 +29,7 @@
     }
   }
 
-  &:disabled {
+  &[disabled] {
     opacity: 0.5;
 
     pointer-events: none;
@@ -40,12 +40,12 @@
     border: 2px solid $accent-button-border-dark;
     color: $accent-color-text-dark;
 
-      @include hover-focus {
-        background: $gradient-button-hover;
-        color: $color-default-white;
-        border-image: $gradient-button-hover;
-        border-image-slice: 1;
-      }
+    @include hover-focus {
+      background: $gradient-button-hover;
+      color: $color-default-white;
+      border-image: $gradient-button-hover;
+      border-image-slice: 1;
+    }
 
     @include active {
       background: $gradient-button-hover;
@@ -55,7 +55,7 @@
       }
     }
 
-    &:disabled {
+    &[disabled] {
       opacity: 0.3;
     }
   }
