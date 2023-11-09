@@ -147,7 +147,7 @@
     padding: 42px 50px;
   }
 
-  @include hover-focus {
+  @include hover {
     border-image: $gradient-button-hover;
     border-image-slice: 1;
 
@@ -157,6 +157,11 @@
       border-image: $gradient-button-hover;
       border-image-slice: 1;
     }
+  }
+
+  &:focus-within {
+    border-image: $gradient-button-hover;
+    border-image-slice: 1;
   }
 }
 
@@ -251,4 +256,12 @@
   padding: 25px;
   width: 100%;
   max-width: 205px;
+
+
+  @include focus {
+    color: $color-default-white;
+    background: $gradient-button-hover;
+    border-image: $gradient-button-hover;
+    border-image-slice: 1;
+  }
 }

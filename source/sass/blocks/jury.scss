@@ -52,13 +52,21 @@
   @include vp-767 {
     min-width: 226px;
     min-height: 274px;
+
+    @include active {
+      .jury__details {
+        bottom: 0;
+        background-color: rgba(16, 38, 84, 0.89);
+        overflow-y: auto;
+      }
+    }
   }
 
   @include hover-focus {
     .jury__details {
       bottom: 0;
       background-color: rgba(16, 38, 84, 0.89);
-      overflow: scroll;
+      overflow-y: auto;
     }
   }
 }
@@ -163,17 +171,15 @@
   cursor: pointer;
 
   &--prev {
-    left: 5%;
-    transform: translateX(-5%);
+    left: 2%;
+  }
+
+  &--next {
+    right: 2%;
 
     svg {
       rotate: 180deg;
     }
-  }
-
-  &--next {
-    right: 5%;
-    transform: translateX(-5%);
   }
 
   @include hover-focus {

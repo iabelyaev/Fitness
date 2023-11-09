@@ -1,0 +1,60 @@
+.contacts {
+  background-color: $color-default-white;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  border-top: 1px solid #74819c;
+}
+
+
+.contacts__title {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 1.62px;
+  color: $accent-color-text-dark;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+.contacts__address {
+  position: relative;
+  font-style: normal;
+  display: grid;
+  grid-template-columns: 170px 110px;
+  column-gap: 120px;
+  row-gap: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-right: 1px solid #74819c;
+    top: 0;
+    bottom: 0;
+    left: 235px;
+  }
+}
+
+.contacts__element {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: $accent-color-text-dark;
+}
+
+.address__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1em;
+  color: inherit;
+}
+
+.address__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: inherit;
+}

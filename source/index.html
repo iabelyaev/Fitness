@@ -21,14 +21,14 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <nav class="header__nav">
+          <div class="header__nav">
             <div class="header__inner">
-              <a href="#">
+              <a class="header__logo logo" href="#">
                 <img src="./img/svg/logotype.svg" width="120" height="26" alt="">
               </a>
               <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
             </div>
-          </nav>
+          </div>
 
           <section class="hero">
             <div class="hero__content">
@@ -124,7 +124,7 @@
                 </button>
               </div>
               <ul class="subscription__list">
-                <li class="subscription__item" data-card tabindex="0">
+                <li class="subscription__item" data-card>
                   <div class="subscription__item-text">
                     <h3 class="subscription__item-title">
                       С тренером
@@ -137,9 +137,9 @@
                     </b>
                     <span>₽</span>
                   </div>
-                  <a class="subscription__item-btn btn btn--secondary" href="" data-link>Купить абонемент</a>
+                  <a class="subscription__item-btn btn btn--secondary" href="#" data-link>Купить абонемент</a>
                 </li>
-                <li class="subscription__item is-active" data-card tabindex="0">
+                <li class="subscription__item is-active" data-card>
                   <div class="subscription__item-text">
                     <h3 class="subscription__item-title">
                       Дневной
@@ -152,9 +152,9 @@
                     </b>
                     <span>₽</span>
                   </div>
-                  <a class="subscription__item-btn btn btn--secondary" href="" data-link>Купить абонемент</a>
+                  <a class="subscription__item-btn btn btn--secondary" href="#" data-link>Купить абонемент</a>
                 </li>
-                <li class="subscription__item" data-card tabindex="0">
+                <li class="subscription__item" data-card>
                   <div class="subscription__item-text">
                     <h3 class="subscription__item-title">
                       С тренером
@@ -167,7 +167,7 @@
                     </b>
                     <span>₽</span>
                   </div>
-                  <a class="subscription__item-btn btn btn--secondary" href="" data-link>Купить абонемент</a>
+                  <a class="subscription__item-btn btn btn--secondary" href="#" data-link>Купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -223,7 +223,7 @@
             <h3 class="jury__title">
               Жюри
             </h3>
-            <div class="jury__slider swiper" data-swiper>
+            <div class="jury__slider swiper" data-swiper="jury">
               <ul class="jury__list swiper-wrapper">
                 <li class="jury__item swiper-slide" tabindex="0">
                   <div class="jury__poster">
@@ -350,14 +350,14 @@
                   </div>
                 </li>
               </ul>
-              <button class="jury__button jury__button--prev swiper-button-prev" type="button">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 1L16 11L6 21" stroke="currentColor"/>
+              <button class="jury__button jury__button--prev swiper-button-prev" type="button" data-swiper-button-prev="jury">
+                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 1L0.999999 17L17 33" stroke="currentColor"/>
                 </svg>
               </button>
-              <button class="jury__button jury__button--next swiper-button-next" type="button">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 1L16 11L6 21" stroke="currentColor"/>
+              <button class="jury__button jury__button--next swiper-button-next" type="button" data-swiper-button-next="jury">
+                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 1L0.999999 17L17 33" stroke="currentColor"/>
                 </svg>
               </button>
             </div>
@@ -448,13 +448,13 @@
                       </li>
                       <li class="accordion__item" data-accordion="element">
                         <div class="accordion__container" >
-                          <h3>Где можно посмотреть расписание?</h3>
-                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          <summary data-accordion="button">Где можно посмотреть расписание?</summary>
+                          <button class="accordion__button" data-accordion="button"  type="button" aria-label="Показать ответ">
                           </button>
-                        </div>
-                        <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
-                            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                          <div class="accordion__content" data-accordion="content">
+                            <div class="accordion__wrapper">
+                              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                            </div>
                           </div>
                         </div>
                       </li>
@@ -647,9 +647,126 @@
             </div>
           </div>
         </section>
+        <section class="reviews">
+          <div class="container">
+            <div class="reviews__content">
+              <h2>Отзывы</h2>
+              <div class="reviews__container">
+                <div class="reviews__swiper swiper" data-swiper="reviews">
+                  <div class="reviews__list swiper-wrapper">
+                    <blockquote class="swiper-slide">
+                      <div class="reviews__img">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
+                          <img src="./img/reviews.png", srcset="./img/reviews@2x.png" width="80" height="80" alt="Фотография клиента.">
+                        </picture>
+                      </div>
+                      <div class="reviews__text">
+                        <cite>Анна Орлова</cite>
+                        <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                      </div>
+                    </blockquote>
+                    <blockquote class="swiper-slide">
+                      <div class="reviews__img">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
+                          <img src="./img/reviews.png", srcset="./img/reviews@2x.png" width="80" height="80" alt="Фотография клиента.">
+                        </picture>
+
+                      </div>
+                      <div class="reviews__text">
+                        <cite>asdsad</cite>
+                        <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                      </div>
+                    </blockquote>
+                    <blockquote class="swiper-slide">
+                      <div class="reviews__img">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
+                          <img src="./img/reviews.png", srcset="./img/reviews@2x.png" width="80" height="80" alt="Фотография клиента.">
+                        </picture>
+                      </div>
+                      <div class="reviews__text">
+                        <cite>llllll</cite>
+                        <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <button class="reviews__button reviews__button--prev swiper-button-prev" type="button" data-swiper-button-prev="reviews">
+                    <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 1L0.999999 17L17 33" stroke="currentColor"/>
+                    </svg>
+                    <span class="visually-hidden">Предыдущий слад</span>
+                  </button>
+                  <button class="reviews__button reviews__button--next swiper-button-prev" type="button" data-swiper-button-next="reviews">
+                    <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 1L0.999999 17L17 33" stroke="currentColor"/>
+                    </svg>
+                    <span class="visually-hidden">Предыдущий слад</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__container">
+          <form class="form" action="https://echo.htmlacademy.ru/.">
+            <div class="container">
+              <div class="form__wrapper">
+                <h2 class="form__title">
+                  Бесплатное занятие
+                </h2>
+                <ul class="form__list">
+                  <li class="form__item">
+                   <label for="name" class="visually-hidden form__label">Имя</label>
+                    <input class="form__field" type="text" id="name" name="name" placeholder="Имя" required>
+                  </li>
+                  <li class="form__item">
+                    <label for="phone" class="visually-hidden form__label">Телефон</label>
+                    <input class="form__field" type="tel" id="phone" name="phone">
+                  </li>
+                </ul>
+                <button class="form__button btn btn--primary" type="submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+          <section class="contacts">
+            <div class="container">
+              <div class="contacts__wrapper">
+                <h2 class="contacts__title">
+                  Контакты
+                </h2>
+                <address class="contacts__address">
+                  <p class="contacts__element">
+                    <span class="address__title">Адрес:</span>
+                    <span class="address__description">г. Омск, ул. 60 лет Октября, 7</span>
+                  </p>
+                  <p class="contacts__element">
+                    <span class="address__title">Телефон:</span>
+                    <a class="address__description address__description--link" href="tel:88005555555">8-800-555-55-55</a>
+                  </p>
+                  <p class="contacts__element">
+                    <span class="address__title">График работы:</span>
+                    <span class="address__description">Пн-Вс: с 8:00 до 22:00</span>
+                  </p>
+                  <p class="contacts__element">
+                    <span class="address__title">Email:</span>
+                    <a class="address__description address__description--link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </p>
+                </address>
+              </div>
+            </div>
+          </section>
+          <div class="footer-new">
+            <div class="container">
+              <a class="footer__logo logo" href="#">
+                <img src="./img/svg/logotype.svg" width="120" height="26" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
 
