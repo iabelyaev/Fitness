@@ -1,10 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {initTabsSSSS} from './modules/tabsss/tabsss.js';
+import {initPrice} from './modules/price-tabs/init-price.js';
 import {initVideo} from './modules/gym-video/video';
-import {initSwiperSlider} from './modules/slider-jury/slider-jury.js';
 import {initTabs} from './modules/tabs/init-tabs.js';
 import {initAccordions} from './modules/accordions/init-accordion.js';
+import {initSwiperSliders} from './modules/slider/init-slider.js';
 
 // ---------------------------------
 
@@ -25,8 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initVideo();
-    initTabsSSSS();
-    initSwiperSlider();
+    initPrice();
+    initSwiperSliders();
     initTabs();
     initAccordions();
   });
