@@ -9,14 +9,14 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   background-color: $color-neon-blue;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   transition: opacity $trans-default;
   outline: none;
 
   &--primary {
     background-color: transparent;
-    border: 2px solid $color-default-white;
+    border-color: $color-default-white;
 
     @include hover-focus {
       background-color: $color-default-white;
@@ -37,7 +37,7 @@
 
   &--secondary {
     background-color: transparent;
-    border: 2px solid $accent-button-border-dark;
+    border-color: $accent-button-border-dark;
     color: $accent-color-text-dark;
 
     @include hover-focus {

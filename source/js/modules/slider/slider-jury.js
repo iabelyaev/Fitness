@@ -15,14 +15,17 @@ const setSliderJury = () => {
       1366: {
         slidesPerView: 4,
         spaceBetween: 40,
+        initialSlide: 6,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 32,
+        initialSlide: 0,
       },
       0: {
         slidesPerView: 1,
         spaceBetween: 32,
+        initialSlide: 0,
       },
     },
   });

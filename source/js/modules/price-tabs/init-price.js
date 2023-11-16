@@ -24,7 +24,7 @@ const setPrice = (mont) => {
   price.forEach((item, index) => {
     const currentPrice = priceData[index];
     item.setAttribute('data-price', currentPrice);
-    item.querySelector('b').textContent = currentPrice;
+    item.querySelector('span').textContent = currentPrice;
   });
 };
 

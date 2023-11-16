@@ -1,13 +1,32 @@
 .subscription {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  position: relative;
   background-color: $background-light;
+  padding-top: 125px;
+  padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  @include vp-767 {
+    padding-top: 74px;
+    padding-bottom: 70px;
+  }
 }
 
 .subscription__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-1365 {
+    padding: 0 119px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 
@@ -19,13 +38,21 @@
   letter-spacing: 1.62px;
   color: $accent-color-text-dark;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   text-align: center;
 
   @include vp-1365 {
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 22px;
   }
 }
 
@@ -34,7 +61,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  padding-bottom: 1rem;
+  padding-bottom: 13px;
   margin-bottom: 37px;
 
   &::after {
@@ -51,10 +78,13 @@
   @include vp-1365 {
     margin-bottom: 45px;
     gap: 54px;
+    padding-bottom: 14px;
   }
 
   @include vp-767 {
     gap: 45px;
+    padding-bottom: 17px;
+    margin-bottom: 34px;
   }
 }
 
@@ -92,8 +122,16 @@
     display: block;
     position: absolute;
     background-color: #d10a42;
-    bottom: -16px;
+    bottom: -13px;
     transition: width 0.3s ease-in-out;
+
+    @include vp-1365 {
+      bottom: -14px;
+    }
+
+    @include vp-767 {
+      bottom: -17px;
+    }
   }
 
   @include hover-focus {
@@ -113,7 +151,6 @@
   }
 }
 
-
 .subscription__list {
   margin: 0;
   padding: 0;
@@ -121,9 +158,15 @@
   gap: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  z-index: 1;
 
   @include vp-1365 {
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    gap: 35px;
   }
 }
 
@@ -131,20 +174,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 360px;
-  padding: 58px 20px 60px;
+  padding: 58px 20px;
   background-color: $color-default-white;
   border: 7px solid $color-default-white;
   text-align: center;
   outline: 0;
+  z-index: 1;
 
   @include vp-1365 {
-    padding: 65px 107px;
+    padding: 60px 110px 58px;
     width: 100%;
   }
 
   @include vp-767 {
     padding: 42px 50px;
+  }
+
+  @include vp-767 {
+    padding: 44px 35px 42px;
   }
 
   @include hover {
@@ -165,53 +214,80 @@
   }
 }
 
-.subscription__item-text {
-  h3 {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 26px;
-    color: $accent-color-text-dark;
-    margin: 0;
-    margin-bottom: 11px;
+[data-card].is-active {
+  border-image: $gradient-button-hover;
+  border-image-slice: 1;
 
-    @include vp-1365 {
-      font-size: 24px;
-      line-height: 24px;
-    }
-
-    @include vp-767 {
-      font-size: 22px;
-      line-height: 24px;
-    }
-  }
-
-  p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    color: $accent-color-text-dark;
-    margin: 0;
-    margin-bottom: 12px;
-
-    @include vp-767 {
-      font-size: 14px;
-      line-height: 22px;
-    }
+  a {
+    color: $color-default-white;
+    background: $gradient-button-hover;
+    border-image: $gradient-button-hover;
+    border-image-slice: 1;
   }
 }
 
+.subscription__item h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $accent-color-text-dark;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+}
+
+.subscription__item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $accent-color-text-dark;
+  margin: 0;
+  margin-bottom: 68px;
+
+  @include vp-1365 {
+    margin-bottom: 75px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 64px;
+  }
+}
+
+
 .subscription__item-price {
   position: relative;
-  margin-bottom: 30px;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  min-height: 150px;
-  width: 100%;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @include vp-1365 {
+    margin-bottom: 24px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+    gap: 10px;
+  }
 
   &::before {
     content: attr(data-price);
     position: absolute;
+    top: -55px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.48;
@@ -219,35 +295,33 @@
     font-weight: 700;
     line-height: 150px;
     color: #e8e8e8;
+    z-index: -1;
 
     @include vp-767 {
       font-size: 80px;
       line-height: 120px;
+      top: -44px;
     }
   }
+}
 
-  b {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 90px;
-    color: $secondary-color-text-dark;
-    z-index: 11;
+.subscription__item-price span {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  color: $secondary-color-text-dark;
+  z-index: 11;
 
-    @include vp-767 {
-      font-size: 48px;
-      line-height: 72px;
-    }
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
   }
+}
 
-  span {
-    position: relative;
-    font-family: $ff-rouble;
-    color: $accent-color-text-dark;
-    margin-left: 10px;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 90px;
-    z-index: 11;
+.subscription__item-price svg {
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
   }
 }
 
@@ -257,11 +331,51 @@
   width: 100%;
   max-width: 205px;
 
+  @include vp-1365 {
+    padding: 21px 22px 20px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 19px;
+  }
+
 
   @include focus {
     color: $color-default-white;
     background: $gradient-button-hover;
     border-image: $gradient-button-hover;
     border-image-slice: 1;
+  }
+
+  @include active {
+    span {
+      opacity: 0.7;
+    }
+  }
+}
+
+
+.subscription__img {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+
+  @include vp-1365 {
+    bottom: -136px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  img {
+    width: 287px;
+    height: 494px;
+    object-fit: contain;
+
+    @include vp-1365 {
+      width: 327px;
+      height: 423px;
+    }
   }
 }

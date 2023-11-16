@@ -1,10 +1,31 @@
 .jury {
-  padding-top: 120px;
   padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-bottom: 110px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
 }
 
 .jury__inner {
   position: relative;
+}
+
+.jury__wrapper {
+  position: relative;
+
+  @include vp-1365 {
+    padding: 0 55px;
+    max-width: 686px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 0 32px;
+  }
 }
 
 .jury__title {
@@ -16,16 +37,34 @@
   color: $accent-color-text-dark;
   margin: 0;
   margin-bottom: 45px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin-bottom: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 42px;
+  }
 }
 
 .jury__slider {
   display: grid;
   grid-template-rows: 294px 1fr;
-  overflow: hidden;
 
   @include vp-767 {
     grid-template-rows: 274px 1fr;
     padding: 0 32px;
+  }
+
+  @include vp-767 {
+    padding: 0;
   }
 }
 
@@ -37,6 +76,27 @@
   display: flex;
 }
 
+
+.jury__item-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
 .jury__item {
   position: relative;
   background-color: $background-overlay-sapphire;
@@ -46,7 +106,7 @@
   outline: 0;
 
   @include vp-1365 {
-    width: 268px;
+    min-width: 268px;
   }
 
   @include vp-767 {
@@ -67,6 +127,10 @@
       bottom: 0;
       background-color: rgba(16, 38, 84, 0.89);
       overflow-y: auto;
+
+      h3 {
+        margin-bottom: 8px;
+      }
     }
   }
 }
@@ -80,37 +144,31 @@
   overflow: hidden;
 
   img {
-    object-position: top;
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
 }
 
-.jury__item-title {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 8px;
-  color: $color-default-white;
-
-  @include vp-1365 {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
 
 .jury__details {
   position: absolute;
-  bottom: -74%;
+  bottom: -68%;
   width: 100%;
   height: 100%;
   transition-property: bottom, background-color;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   padding: 45px 41px 50px 42px;
+
+  @include vp-1365 {
+    bottom: -69.5%;
+  }
+
+  @include vp-767 {
+    bottom: -66%;
+    padding: 45px 20px;
+  }
 
 
   p {
@@ -160,22 +218,59 @@
 
 
 .jury__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 56px;
   height: 56px;
   background-color: transparent;
   padding: 0;
   border: 0;
-  bottom: 20%;
-  transform: translateY(-20%);
+  bottom: 26%;
+  transform: translateY(-28%);
   cursor: pointer;
 
+  @include vp-1365 {
+    transform: translateY(-37%);
+  }
+
+  @include vp-767 {
+    bottom: 35%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-27%);
+  }
+
+  @include vp-767 {
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
   &--prev {
-    left: 2%;
+    left: -6.5%;
+
+    @include vp-1365 {
+      left: -3%;
+    }
+
+    @include vp-767 {
+      left: -1%;
+    }
   }
 
   &--next {
-    right: 2%;
+    right: -6.5%;
+
+    @include vp-1365 {
+      right: -3%;
+    }
+
+    @include vp-767 {
+      right: -1%;
+    }
 
     svg {
       rotate: 180deg;
@@ -185,5 +280,10 @@
   @include hover-focus {
     outline: 1px solid $accent-color-text-dark;
     border-radius: 50%;
+  }
+
+  @include active {
+    background-color: $accent-color-text-dark;
+    color: $color-default-white;
   }
 }
