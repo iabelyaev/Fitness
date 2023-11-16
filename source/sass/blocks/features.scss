@@ -4,13 +4,13 @@
   background-color: $background-light;
 
   @include vp-1365 {
-    padding-top: 91px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 }
 
@@ -39,12 +39,11 @@
     letter-spacing: 1.26px;
   }
 
-
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
   }
 }
 
@@ -79,18 +78,12 @@
   position: relative;
   display: grid;
   grid-template-columns: min-content 1fr;
-  column-gap: 30px;
+  column-gap: 31px;
   color: $accent-color-text-dark;
   max-width: 340px;
 
   @include vp-1365 {
     column-gap: 15px;
-  }
-
-  div {
-    @include vp-767 {
-      margin-left: 2px;
-    }
   }
 
   &:nth-child(2n) {
@@ -109,50 +102,25 @@
         display: none;
       }
     }
-
-    @include vp-767 {
-      margin-bottom: 3px;
-
-      .features__item-text h3 {
-        margin-bottom: 9px;
-      }
-    }
   }
 
   &:nth-child(4n) {
-    @include vp-767 {
-      margin-top: 5px;
-      margin-bottom: 0;
-    }
-
-    .features__item-text h3 {
-      @include vp-767 {
-        margin-bottom: 8px;
-      }
-    }
-
-    .features__item-text p {
-      @include vp-767 {
-        padding: 0 11px;
-      }
-    }
-
     &::after {
       top: -57px;
     }
   }
 
-  &:nth-child(5n) {
-    @include vp-767 {
-      margin-top: -5px;
-    }
-
-    .features__item-text h3 {
-      @include vp-767 {
-        margin-bottom: 14px;
-      }
-    }
-  }
+  //&:nth-child(5n) {
+  //  @include vp-767 {
+  //    margin-top: -5px;
+  //  }
+  //
+  //  .features__item-text h3 {
+  //    @include vp-767 {
+  //      margin-bottom: 14px;
+  //    }
+  //  }
+  //}
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -174,7 +142,7 @@
     text-align: center;
     max-width: 240px;
     justify-self: center;
-    margin-top: 3px;
+    margin-top: 4px;
 
     @include vp-1365 {
       max-width: 100%;
@@ -192,6 +160,8 @@
       row-gap: 5px;
       grid-column: 1/1;
       grid-row: 3/3;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -243,7 +213,7 @@
   line-height: 22px;
   margin: 0;
   color: inherit;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 
   @include vp-1365 {
     font-size: 20px;
@@ -254,6 +224,7 @@
   @include vp-767 {
     font-size: 18px;
     line-height: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -266,7 +237,7 @@
 
   @include vp-767 {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 22px;
     font-weight: 300;
     padding: 0 5px;
   }
@@ -287,7 +258,7 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 }
 
@@ -299,6 +270,7 @@
   }
 
   @include vp-767 {
+    font-weight: 300;
     padding: 0 45px;
   }
 }

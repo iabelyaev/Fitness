@@ -6,7 +6,7 @@
 
   @include vp-1365 {
     padding-top: 100px;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
@@ -52,7 +52,7 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 }
 
@@ -76,14 +76,15 @@
   }
 
   @include vp-1365 {
-    margin-bottom: 45px;
-    gap: 54px;
+    margin-bottom: 44px;
+    gap: 55px;
     padding-bottom: 14px;
   }
 
   @include vp-767 {
     gap: 45px;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
+    padding-right: 0;
     margin-bottom: 34px;
   }
 }
@@ -121,6 +122,7 @@
     width: 0;
     display: block;
     position: absolute;
+    left: 0;
     background-color: #d10a42;
     bottom: -13px;
     transition: width 0.3s ease-in-out;
@@ -130,7 +132,7 @@
     }
 
     @include vp-767 {
-      bottom: -17px;
+      bottom: -18px;
     }
   }
 
@@ -138,7 +140,7 @@
     color: $accent-color-text-dark;
 
     &::after {
-      width: 100%;
+      width: 101%;
     }
   }
 }
@@ -166,7 +168,7 @@
   }
 
   @include vp-767 {
-    gap: 36px;
+    gap: 35px;
   }
 }
 
@@ -188,12 +190,18 @@
     width: 100%;
   }
 
-  @include vp-767 {
-    padding: 42px 50px;
-  }
 
   @include vp-767 {
-    padding: 43px 35px 42px;
+    padding: 43px 35px;
+  }
+
+  &:nth-child(2n),
+  &:nth-child(3n) {
+    p {
+      @include vp-1365 {
+        color: #495a7d;
+      }
+    }
   }
 
   @include hover {
@@ -237,12 +245,12 @@
   @include vp-1365 {
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
   }
 
   @include vp-767 {
     font-size: 22px;
-    line-height: 24px;
+    line-height: 22px;
     margin-bottom: 14px;
   }
 }
@@ -262,7 +270,7 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 63px;
+    margin-bottom: 66px;
   }
 }
 
@@ -281,7 +289,7 @@
 
   @include vp-767 {
     margin-bottom: 22px;
-    gap: 10px;
+    gap: 11px;
   }
 
   &::before {
@@ -332,7 +340,7 @@
   max-width: 205px;
 
   @include vp-1365 {
-    padding: 21px 22px 20px;
+    padding: 21px 22px 19px;
   }
 
   @include vp-767 {
@@ -361,7 +369,7 @@
   bottom: -150px;
 
   @include vp-1365 {
-    bottom: -136px;
+    bottom: -148px;
   }
 
   @include vp-767 {

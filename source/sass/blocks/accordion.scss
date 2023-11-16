@@ -16,7 +16,7 @@
 
     @include vp-767 {
       padding-top: 22px;
-      padding-bottom: 20px;
+      padding-bottom: 21px;
     }
   }
 
@@ -97,6 +97,7 @@
   border: 1px solid #1c3374;
   background-color: transparent;
   outline: 0;
+  cursor: pointer;
 
   @include vp-767 {
     width: 30px;
@@ -167,7 +168,7 @@
 }
 
 [data-accordion="element"].is-active .accordion__container {
-  padding-bottom: 11px;
+  padding-bottom: 13px;
 
   @include vp-767 {
     padding-bottom: 19px;
