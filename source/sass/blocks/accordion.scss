@@ -168,7 +168,7 @@
 }
 
 [data-accordion="element"].is-active .accordion__container {
-  padding-bottom: 13px;
+  padding-bottom: 12px;
 
   @include vp-767 {
     padding-bottom: 19px;

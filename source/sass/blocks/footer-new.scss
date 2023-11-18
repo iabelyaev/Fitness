@@ -1,17 +1,16 @@
 .footer-new {
-  padding: 35px 0 40px;
+  padding: 36px 0;
   background-color: $background-black;
   grid-column: 1/-1;
 
   @include vp-1365 {
-    padding: 44px 0 46px;
+    padding: 46px 0 44px;
   }
 
   @include vp-767 {
-    padding: 26px 0 45px;
+    padding: 29px 0 44px;
   }
 }
-
 
 .footer-new__container {
   display: flex;
@@ -27,7 +26,7 @@
 }
 
 .footer__logo {
-  width: 107px;
+  width: 106px;
   height: 24px;
 
   @include vp-1365 {
@@ -36,8 +35,9 @@
   }
 
   @include vp-767 {
-    width: 89px;
-    margin-bottom: 25px;
+    width: 90px;
+    height: 16px;
+    margin-bottom: 27px;
   }
 
   img {

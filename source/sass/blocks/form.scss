@@ -1,12 +1,12 @@
 .form {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 59px;
   background-color: $accent-color-text-dark;
   color: $color-default-white;
 
   @include vp-1365 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 99px;
   }
 
   @include vp-767 {
@@ -22,8 +22,8 @@
   padding-right: 170px;
 
   @include vp-1365 {
-    padding-left: 91px;
-    padding-right: 90px;
+    padding-left: 90px;
+    padding-right: 91px;
     margin: 0 auto;
   }
 
@@ -40,10 +40,10 @@
   letter-spacing: 1.62px;
   color: inherit;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 
   @include vp-1365 {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
@@ -53,7 +53,7 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 }
 
@@ -67,13 +67,13 @@
   margin-bottom: 38px;
 
   @include vp-1365 {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     gap: 60px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 25px;
     margin-bottom: 40px;
   }
 }
@@ -89,7 +89,7 @@
   border-bottom-color: #74819c;
   background-color: $accent-color-text-dark;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 3px;
   outline: 0;
 
@@ -99,6 +99,8 @@
   }
 
   @include vp-767 {
+    padding-top: 10px;
+    padding-bottom: 2px;
     font-size: 14px;
     line-height: 22px;
   }
@@ -133,8 +135,7 @@
   padding-bottom: 23px;
 
   @include vp-1365 {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding: 20px;
     max-width: 100%;
   }
 }

@@ -6,13 +6,13 @@
 
   @include vp-1365 {
     border-top: 0;
-    padding-top: 105px;
+    padding-top: 104px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding-top: 68px;
-    padding-bottom: 68px;
+    padding-top: 67px;
+    padding-bottom: 70px;
   }
 }
 
@@ -23,8 +23,8 @@
   padding-right: 107px;
 
   @include vp-1365 {
-    padding-left: 91px;
-    padding-right: 92px;
+    padding-left: 90px;
+    padding-right: 91px;
     margin: 0 auto;
   }
 
@@ -49,6 +49,7 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 42px;
+    margin-bottom: 41px;
   }
 
   @include vp-767 {
@@ -69,13 +70,14 @@
   row-gap: 15px;
 
   @include vp-1365 {
-    row-gap: 26px;
+    column-gap: 122px;
+    row-gap: 27px;
     grid-template-columns: 1fr 1fr;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    row-gap: 26px;
+    row-gap: 28px;
   }
 
   &::after {
@@ -88,7 +90,7 @@
     left: 220px;
 
     @include vp-1365 {
-      left: 250px;
+      left: 251px;
     }
 
     @include vp-767 {
@@ -101,10 +103,14 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
   color: $accent-color-text-dark;
 
   @include vp-1365 {
+    gap: 11px;
+  }
+
+  @include vp-767 {
     gap: 12px;
   }
 
