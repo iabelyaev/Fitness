@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Веб-сайт Фитнес-центра">
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Light.woff2" type="font/woff2">
     <link rel="preload" as="font" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2">
@@ -24,7 +24,7 @@
           <div class="header__nav">
             <div class="header__inner">
               <a class="header__logo logo" href="#">
-                <img src="./img/svg/logotype.svg" width="120" height="26" alt="">
+                <img src="./img/svg/logotype.svg" width="120" height="26" alt="Логотип Тренажерного зала.">
               </a>
               <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
             </div>
@@ -93,7 +93,7 @@
                 <div class="about__video video">
                   <picture>
                     <source media="(max-width: 767px)" srcset="./img/gym-mobile.jpg 1x, ./img/gym-mobile@2x.jpg 2x">
-                    <img src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228" data-poster>
+                    <img src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228" data-poster alt>
                   </picture>
                   <button class="video__button" type="button" aria-label="Воспроизвести видео" data-button>
                     <svg width="17" height="17" viewBox="0 0 17 17">
@@ -175,10 +175,10 @@
             <picture>
               <source media="(max-width: 1365px)" srcset="./img/plates-tablet@1x.webp 1x, ./img/plates-tablet@2x.webp 2x"
                       type="image/webp">
-              <source srcset="./img/plates-desktop@1x.webp 1x, ./img/plates-desktop@2x.webp"
+              <source srcset="./img/plates-desktop@1x.webp 1x, ./img/plates-desktop@2x.webp 2x"
                       type="image/webp">
               <source media="(max-width: 1365px)" srcset="./img/plates-tablet@1x.png 1x, ./img/plates-tablet@2x.png 2x">
-              <img src="./img/plates-desktop@1x.png 1x," width="287" height="494" srcset="./img/plates-desktop@2x.png" decoding="async" alt>
+              <img src="./img/plates-desktop@1x.png" width="287" height="494" srcset="./img/plates-desktop@2x.png 2x" decoding="async" alt>
             </picture>
           </div>
         </section>
@@ -230,7 +230,7 @@
                       <div class="jury__poster">
                         <picture>
                           <source srcset="./img/slider-1.webp 1x, ./img/slider-1@2x.webp 2x" type="image/webp">
-                          <img src="img/slider-1.jpg" srcset="./img/slider-1@2x.jpg 2x" width="260" height="294" decoding="async">
+                          <img src="img/slider-1.jpg" srcset="./img/slider-1@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
                         </picture>
                       </div>
                       <div class="jury__details">
@@ -247,7 +247,7 @@
                       <div class="jury__poster">
                         <picture>
                           <source srcset="./img/slider-2.webp 1x, ./img/slider-2@2x.webp 2x" type="image/webp">
-                          <img src="img/slider-2.jpg" srcset="img/slider-2@2x.jpg 2x" width="260" height="294" decoding="async" >
+                          <img src="img/slider-2.jpg" srcset="img/slider-2@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
                         </picture>
                       </div>
                       <div class="jury__details">
@@ -264,7 +264,7 @@
                       <div class="jury__poster">
                         <picture>
                           <source srcset="./img/slider-3.webp 1x, ./img/slider-3@2x.webp 2x" type="image/webp">
-                          <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async">
+                          <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
                         </picture>
                       </div>
                       <div class="jury__details">
@@ -279,7 +279,10 @@
                     </li>
                     <li class="jury__item swiper-slide" tabindex="0">
                       <div class="jury__poster">
-                        <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async">
+                        <picture>
+                          <source srcset="./img/slider-3.webp 1x, ./img/slider-3@2x.webp 2x" type="image/webp">
+                          <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
+                        </picture>
                       </div>
                       <div class="jury__details">
                         <h3 class="jury__item-title">Анна Павлова</h3>
@@ -293,7 +296,10 @@
                     </li>
                     <li class="jury__item swiper-slide" tabindex="0">
                       <div class="jury__poster">
-                        <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async">
+                        <picture>
+                          <source srcset="./img/slider-3.webp 1x, ./img/slider-3@2x.webp 2x" type="image/webp">
+                          <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
+                        </picture>
                       </div>
                       <div class="jury__details">
                         <h3 class="jury__item-title">Анна Павлова</h3>
@@ -307,7 +313,10 @@
                     </li>
                     <li class="jury__item swiper-slide" tabindex="0">
                       <div class="jury__poster">
-                        <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async">
+                        <picture>
+                          <source srcset="./img/slider-3.webp 1x, ./img/slider-3@2x.webp 2x" type="image/webp">
+                          <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
+                        </picture>
                       </div>
                       <div class="jury__details">
                         <h3 class="jury__item-title">Анна Павлова</h3>
@@ -321,7 +330,10 @@
                     </li>
                     <li class="jury__item swiper-slide" tabindex="0">
                       <div class="jury__poster">
-                        <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async">
+                        <picture>
+                          <source srcset="./img/slider-3.webp 1x, ./img/slider-3@2x.webp 2x" type="image/webp">
+                          <img src="img/slider-3.jpg" srcset="img/slider-3@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
+                        </picture>
                       </div>
                       <div class="jury__details">
                         <h3 class="jury__item-title">Анна Павлова</h3>
@@ -337,7 +349,7 @@
                       <div class="jury__poster">
                         <picture>
                           <source srcset="./img/slider-4.webp 1x, ./img/slider-4@2x.webp 2x" type="image/webp">
-                          <img src="img/slider-4.jpg" srcset="img/slider-4@2x.jpg 2x" width="260" height="294" decoding="async">
+                          <img src="img/slider-4.jpg" srcset="img/slider-4@2x.jpg 2x" width="260" height="294" decoding="async" alt="Фотография тренера.">
                         </picture>
                       </div>
                       <div class="jury__details">
@@ -356,11 +368,13 @@
                   <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 1L0.999999 17L17 33" stroke="currentColor"/>
                   </svg>
+                  <span class="visually-hidden">Предыдущий слайд</span>
                 </button>
                 <button class="jury__button jury__button--next" type="button" data-swiper-button-next="jury">
                   <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 1L0.999999 17L17 33" stroke="currentColor"/>
                   </svg>
+                  <span class="visually-hidden">Следующий слайд</span>
                 </button>
               </div>
             </div>
@@ -436,7 +450,7 @@
                     <h3>Год</h3>
                     <b>4999</b>
                     <p>Безлимитный абонемент в тренажерный зал</p>
-                    <a href="#">
+                    <a class="stocks__link" href="#">
                       Подробнее
                     </a>
                   </div>
@@ -453,19 +467,19 @@
                 </article>
                 <ul class="stocks__list">
                   <li class="stocks__item">
-                    <div class="stocks__item-inner">
+                    <div class="stocks__item-text stocks__item-text--secondary">
                       <h3>Месяц бесплатно</h3>
                       <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-                      <a href="#">
+                      <a class="stocks__link" href="#">
                         Подробнее
                       </a>
                     </div>
                   </li>
                   <li class="stocks__item">
-                    <div class="stocks__item-inner">
+                    <div class="stocks__item-text stocks__item-text--secondary">
                       <h3>Скидка 20%</h3>
                       <p>Корпоративный фитнес с командой</p>
-                      <a href="#">
+                      <a class="stocks__link" href="#">
                         Подробнее
                       </a>
                     </div>
@@ -481,16 +495,16 @@
               <h2>Вопросы и ответы</h2>
               <div class="faq__content tabs" data-tabs="parent">
                 <div class="faq__controls" data-tabs="controls">
-                  <button data-tabs="control">
+                  <button type="button" data-tabs="control">
                     Центр
                   </button>
-                  <button data-tabs="control">
+                  <button type="button" data-tabs="control">
                     Абонемент
                   </button>
-                  <button data-tabs="control">
+                  <button type="button" data-tabs="control">
                     Услуги
                   </button>
-                  <button data-tabs="control">
+                  <button type="button" data-tabs="control">
                     Правила
                   </button>
                 </div>
@@ -498,49 +512,49 @@
                   <li class="faq__list" data-tabs="element">
                     <ul class="accordion" data-accordion="parent">
                       <li class="accordion__item is-active" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Как стать членом фитнес-центра?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
-                            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам&nbsp;на почту.</p>
+                          <div class="accordion__wrapper" data-accordion="button">
+                            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам&nbsp;на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
-                          <h3 data-accordion="button">Где можно посмотреть расписание?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button"  type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                        <div class="accordion__container" data-accordion="button">
+                          <h3>Где можно посмотреть расписание?</h3>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
@@ -550,49 +564,49 @@
                   <li class="faq__list" data-tabs="element">
                     <ul class="accordion" data-accordion="parent">
                       <li class="accordion__item is-active" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Занятия с тренером входят в абонемент?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Можно ли заморозить абонемент?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
@@ -602,51 +616,52 @@
                   <li class="faq__list" data-tabs="element">
                     <ul class="accordion" data-accordion="parent">
                       <li class="accordion__item is-active" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Предлагает ли клуб услуги
                             по консультированию
-                            по вопросам питания?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                            по вопросам питания?
+                          </h3>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Есть ли в центре детская комната?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
@@ -656,49 +671,49 @@
                   <li class="faq__list" data-tabs="element">
                     <ul class="accordion" data-accordion="parent">
                       <li class="accordion__item is-active" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Есть в фитнес-центре дресс-код?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Какие дополнительные правила посещения центра?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
                       </li>
                       <li class="accordion__item" data-accordion="element">
-                        <button class="accordion__container" type="button" data-accordion="button">
+                        <div class="accordion__container" data-accordion="button">
                           <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                          <div role="button" tabindex="0" class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
-                          </div>
-                        </button>
+                          <button class="accordion__button" data-accordion="button" type="button" aria-label="Показать ответ">
+                          </button>
+                        </div>
                         <div class="accordion__content" data-accordion="content">
-                          <div class="accordion__wrapper">
+                          <div class="accordion__wrapper" data-accordion="button">
                             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                           </div>
                         </div>
@@ -721,7 +736,7 @@
                       <div class="reviews__img">
                         <picture>
                           <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
-                          <img src="./img/reviews.png", srcset="./img/reviews@2x.png" width="80" height="80" alt="Фотография клиента.">
+                          <img src="./img/reviews.png" srcset="./img/reviews@2x.png 2x" width="80" height="80" alt="Фотография клиента.">
                         </picture>
                       </div>
                         <cite>Анна Орлова</cite>
@@ -731,7 +746,7 @@
                       <div class="reviews__img">
                         <picture>
                           <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
-                          <img src="./img/reviews.png", srcset="./img/reviews@2x.png" width="80" height="80" alt="Фотография клиента.">
+                          <img src="./img/reviews.png" srcset="./img/reviews@2x.png 2x" width="80" height="80" alt="Фотография клиента.">
                         </picture>
                       </div>
                       <cite>Маша Орлова</cite>
@@ -741,7 +756,7 @@
                       <div class="reviews__img">
                         <picture>
                           <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
-                          <img src="./img/reviews.png", srcset="./img/reviews@2x.png" width="80" height="80" alt="Фотография клиента.">
+                          <img src="./img/reviews.png" srcset="./img/reviews@2x.png 2x" width="80" height="80" alt="Фотография клиента.">
                         </picture>
                       </div>
                       <cite>Дарья Козлова</cite>
@@ -817,7 +832,7 @@
             <div class="container">
               <div class="footer-new__container">
                 <a class="footer__logo logo" href="#">
-                  <img src="./img/svg/logo-footer.svg" width="109" height="24" alt="">
+                  <img src="./img/svg/logo-footer.svg" width="109" height="24" alt="Логотип тренажерного зала.">
                 </a>
                 <nav class="footer__navigation menu">
                   <ul class="menu__list">

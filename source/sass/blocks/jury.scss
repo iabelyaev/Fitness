@@ -182,10 +182,6 @@
   }
 }
 
-//.jury__item:hover .jury__details {
-//
-//}
-
 .jury__details-list {
   margin: 0;
   padding: 0;
@@ -194,7 +190,7 @@
   flex-direction: column;
   gap: 12px;
 
-  & > li {
+  li {
     position: relative;
     font-size: 14px;
     font-weight: 400;
