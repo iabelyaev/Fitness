@@ -67,4 +67,10 @@
   @include focus {
     border-color: $color-default-white;
   }
+
+  @include active {
+    &::after {
+      width: 0;
+    }
+  }
 }
