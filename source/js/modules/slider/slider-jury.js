@@ -3,7 +3,7 @@ const swiperButtonPrev = document.querySelector('[data-swiper-button-prev="jury"
 const swiperButtonNext = document.querySelector('[data-swiper-button-next="jury"]');
 
 const setSliderJury = () => {
-  return new window.Swiper(swiperJury, {
+  const swiperSliderJury = new window.Swiper(swiperJury, {
     loop: true,
     slidesPerView: 4,
     direction: 'horizontal',
@@ -29,6 +29,8 @@ const setSliderJury = () => {
       },
     },
   });
+
+  return swiperSliderJury;
 };
 
 export const initSliderJury = () => {

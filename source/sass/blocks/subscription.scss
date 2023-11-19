@@ -222,7 +222,7 @@
   }
 }
 
-[data-card].is-active {
+[data-card="card"].is-active {
   border-image: $gradient-button-hover;
   border-image-slice: 1;
 

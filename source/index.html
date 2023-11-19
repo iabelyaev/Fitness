@@ -51,12 +51,10 @@
               </div>
               <div class="hero__picture">
                 <picture>
-                  <source media="(max-width: 1365px)" srcset="./img/hero-tablet.webp 1x, ./img/hero-tablet@2x.webp 2x"
-                          type="image/webp">
-                  <source srcset="./img/hero-desktop.webp 1x, ./img/hero-desktop@2x.webp 2x"
-                          type="image/webp">
-                  <source media="(max-width: 1365px)" srcset="./img/hero-tablet.jpg 1x, ./img/hero-tablet@2x.jpg 2x">
-                  <img src="./img/hero-desktop.jpg" srcset="./img/hero-desktop@2x.jpg 2x" width="500" height="524" fetchPriority="high" alt="Фотография тренера.">
+                  <source media="(max-width: 1365px)" srcset="./img/hero-tablet.webp 1x, ./img/hero-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="./img/hero-desktop.webp 1x, ./img/hero-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 1365px)" srcset="./img/hero-tablet.jpg 1x, ./img/hero-tablet@2x.jpg 2x" type="image/jpg">
+                  <img src="./img/hero-desktop.jpg" srcset="./img/hero-desktop@2x.jpg 2x" width="500" height="524" alt="Фотография тренера.">
                 </picture>
               </div>
             </div>
@@ -85,19 +83,21 @@
                     <source media="(max-width: 767px)" srcset="./img/gym-m.webp 1x, ./img/gym-m@2x.webp 2x" type="image/webp">
                     <source media="(max-width: 1365px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x" type="image/webp">
                     <source srcset="./img/gym-photo.webp 1x, ./img/gym-photo@2x.webp 2x" type="image/webp">
-                    <source media="(max-width: 767px)" srcset="./img/gym-m.jpg 1x, ./img/gym-m@2x.jpg 2x">
-                    <source media="(max-width: 1365px)" srcset="./img/gym-tablet.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./img/gym-m.jpg 1x, ./img/gym-m@2x.jpg 2x" type="image/jpg">
+                    <source media="(max-width: 1365px)" srcset="./img/gym-tablet.jpg 1x, ./img/gym-tablet@2x.jpg 2x" type="image/jpg">
                     <img src="./img/gym-photo.jpg" srcset="./img/gym-photo@2x.jpg 2x" width="660" height="401" decoding="async" alt="Фотография тренажерного зала.">
                   </picture>
                 </div>
                 <div class="about__video video">
                   <picture>
-                    <source media="(max-width: 767px)" srcset="./img/gym-mobile.jpg 1x, ./img/gym-mobile@2x.jpg 2x">
-                    <img src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228" data-poster alt>
+                    <source media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x" type="image/webp">
+                    <source srcset="./img/video.webp 1x, ./img/video@2x.webp 2x" type="image/webp">
+                    <source media="(max-width: 767px)" srcset="./img/gym-mobile.jpg 1x, ./img/gym-mobile@2x.jpg 2x" type="image/jpg">
+                    <img src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228" data-poster="video" alt>
                   </picture>
-                  <button class="video__button" type="button" aria-label="Воспроизвести видео" data-button>
+                  <button class="video__button" type="button" aria-label="Воспроизвести видео" data-button="btn-video">
                     <svg width="17" height="17" viewBox="0 0 17 17">
-                      <use xlink:href="img/sprite.svg#play"></use>
+                      <use href="img/sprite.svg#play"></use>
                     </svg>
                   </button>
                 </div>
@@ -111,7 +111,7 @@
               <h2 class="subscription__title">
                 Абонементы
               </h2>
-              <div class="subscription__controls" data-controls>
+              <div class="subscription__controls">
                 <button class="subscription__button is-active" data-tab="1" type="button">
                   1 месяц
                 </button>
@@ -123,48 +123,48 @@
                 </button>
               </div>
               <ul class="subscription__list">
-                <li class="subscription__item" data-card>
+                <li class="subscription__item" data-card="card">
                     <h3 class="subscription__item-title">
                       С тренером
                     </h3>
                     <p>12 занятий</p>
-                  <div class="subscription__item-price" data-price-number>
+                  <div class="subscription__item-price">
                     <span></span>
                     <svg width="30" height="42">
-                      <use xlink:href="/img/sprite.svg#rouble"></use>
+                      <use href="/img/sprite.svg#rouble"></use>
                     </svg>
                   </div>
-                  <a class="subscription__item-btn btn btn--secondary" href="#" data-link>
+                  <a class="subscription__item-btn btn btn--secondary" href="#">
                     <span>Купить абонемент</span>
                   </a>
                 </li>
-                <li class="subscription__item is-active" data-card>
+                <li class="subscription__item is-active" data-card="card">
                   <h3 class="subscription__item-title">
                     Дневной
                   </h3>
-                  <p>с 8:00 до 17:00 </p>
-                  <div class="subscription__item-price" data-price-number>
+                  <p>с 8:00 до 17:00</p>
+                  <div class="subscription__item-price">
                     <span></span>
                     <svg width="30" height="42">
-                      <use xlink:href="/img/sprite.svg#rouble"></use>
+                      <use href="/img/sprite.svg#rouble"></use>
                     </svg>
                   </div>
-                  <a class="subscription__item-btn btn btn--secondary" href="#" data-link>
+                  <a class="subscription__item-btn btn btn--secondary" href="#">
                     <span>Купить абонемент</span>
                   </a>
                 </li>
-                <li class="subscription__item" data-card>
+                <li class="subscription__item" data-card="card">
                     <h3 class="subscription__item-title">
                       Полный день
                     </h3>
-                    <p>с 8:00 до 22:00 </p>
-                  <div class="subscription__item-price" data-price-number>
+                    <p>с 8:00 до 22:00</p>
+                  <div class="subscription__item-price">
                     <span></span>
                       <svg width="30" height="42">
-                      <use xlink:href="/img/sprite.svg#rouble"></use>
+                      <use href="/img/sprite.svg#rouble"></use>
                     </svg>
                   </div>
-                  <a class="subscription__item-btn btn btn--secondary is-disabled" href="#" data-link>
+                  <a class="subscription__item-btn btn btn--secondary" href="#">
                     <span>Купить абонемент</span>
                   </a>
                 </li>
@@ -177,7 +177,7 @@
                       type="image/webp">
               <source srcset="./img/plates-desktop@1x.webp 1x, ./img/plates-desktop@2x.webp 2x"
                       type="image/webp">
-              <source media="(max-width: 1365px)" srcset="./img/plates-tablet@1x.png 1x, ./img/plates-tablet@2x.png 2x">
+              <source media="(max-width: 1365px)" srcset="./img/plates-tablet@1x.png 1x, ./img/plates-tablet@2x.png 2x" type="image/jpg">
               <img src="./img/plates-desktop@1x.png" width="287" height="494" srcset="./img/plates-desktop@2x.png 2x" decoding="async" alt>
             </picture>
           </div>
@@ -210,8 +210,8 @@
                       <source media="(max-width: 767px)" srcset="./img/games-mb.webp 1x, ./img/games-mb@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1365px)" srcset="./img/games-tablet.webp 1x, ./img/games-tablet@2x.webp 2x" type="image/webp">
                       <source srcset="./img/games.webp 1x, ./img/games@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" srcset="./img/games-mb.jpg 1x, ./img/games-mb@2x.jpg 2x">
-                      <source media="(max-width: 1365px)" srcset="./img/games-tablet.jpg 1x, ./img/games-tablet@2x.jpg 2x">
+                      <source media="(max-width: 767px)" srcset="./img/games-mb.jpg 1x, ./img/games-mb@2x.jpg 2x" type="image/jpg">
+                      <source media="(max-width: 1365px)" srcset="./img/games-tablet.jpg 1x, ./img/games-tablet@2x.jpg 2x" type="image/jpg">
                       <img src="./img/games.jpg" srcset="./img/games@2x.jpg 2x" width="660" height="500" decoding="async" alt="Промо фото соревновании.">
                     </picture>
                   </div>
@@ -459,8 +459,8 @@
                       <source media="(max-width: 767px)" srcset="./img/stocks-mobile.webp 1x, ./img/stocks-mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1365px)" srcset="./img/stocks-tablet.webp 1x, ./img/stocks-tablet@2x.webp 2x" type="image/webp">
                       <source srcset="./img/stock-photo.webp 1x, ./img/stock-photo@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" srcset="./img/stocks-mobile.jpg 1x, ./img/stocks-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1365px)" srcset="./img/stocks-tablet.jpg 1x, ./img/stocks-tablet@2x.jpg 2x">
+                      <source media="(max-width: 767px)" srcset="./img/stocks-mobile.jpg 1x, ./img/stocks-mobile@2x.jpg 2x" type="image/jpg">
+                      <source media="(max-width: 1365px)" srcset="./img/stocks-tablet.jpg 1x, ./img/stocks-tablet@2x.jpg 2x" type="image/jpg">
                       <img src="./img/stock-photo.jpg" width="280" height="462" srcset="./img/stock-photo@2x.jpg 2x" decoding="async" alt="Фотография девушки.">
                     </picture>
                   </div>
@@ -678,7 +678,7 @@
                         </div>
                         <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper" data-accordion="button">
-                            <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                            <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                           </div>
                         </div>
                       </li>
@@ -735,7 +735,7 @@
                     <blockquote class="reviews__item swiper-slide">
                       <div class="reviews__img">
                         <picture>
-                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
+                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x" type="image/png">
                           <img src="./img/reviews.png" srcset="./img/reviews@2x.png 2x" width="80" height="80" alt="Фотография клиента.">
                         </picture>
                       </div>
@@ -745,7 +745,7 @@
                     <blockquote class="reviews__item swiper-slide">
                       <div class="reviews__img">
                         <picture>
-                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
+                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x" type="image/png">
                           <img src="./img/reviews.png" srcset="./img/reviews@2x.png 2x" width="80" height="80" alt="Фотография клиента.">
                         </picture>
                       </div>
@@ -755,7 +755,7 @@
                     <blockquote class="reviews__item swiper-slide">
                       <div class="reviews__img">
                         <picture>
-                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x">
+                          <source media="(max-width: 767px)" srcset="./img/reviews-mob.png 1x, ./img/reviews-mob@2x.png 2x" type="image/png">
                           <img src="./img/reviews.png" srcset="./img/reviews@2x.png 2x" width="80" height="80" alt="Фотография клиента.">
                         </picture>
                       </div>
@@ -791,11 +791,11 @@
                 </h2>
                 <ul class="form__list">
                   <li class="custom-input" data-validate-type="text" data-limitation="name" data-required="data-required" data-message-base="Обязательное поле">
-                    <label for="name" class="visually-hidden form__label">Имя</label>
+                    <label class="visually-hidden form__label" for="name">Имя</label>
                     <input class="form__field" type="text" id="name" name="name" placeholder="Имя" required>
                   </li>
                   <li class="custom-input" data-validate-type="phone" data-required="data-required" data-message-base="Обязательное поле" data-phone-length="18">
-                    <label for="phone" class="visually-hidden form__label">Телефон</label>
+                    <label class="visually-hidden form__label" for="phone">Телефон</label>
                     <input class="form__field" type="tel" id="phone" name="phone" placeholder="Телефон" required>
                   </li>
                 </ul>
@@ -858,7 +858,7 @@
                     <li class="social__item">
                       <a class="social__link" href="#">
                         <svg width="14" height="14">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                         <span class="visually-hidden">Вконтакте</span>
                       </a>
@@ -866,7 +866,7 @@
                     <li class="social__item">
                       <a class="social__link" href="#">
                         <svg width="14" height="14">
-                          <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                          <use href="img/sprite.svg#odnoklassniki"></use>
                         </svg>
                         <span class="visually-hidden">Одноклассники</span>
                       </a>
@@ -874,7 +874,7 @@
                     <li class="social__item">
                       <a class="social__link" href="#">
                         <svg width="14" height="14">
-                          <use xlink:href="img/sprite.svg#reddit"></use>
+                          <use href="img/sprite.svg#reddit"></use>
                         </svg>
                         <span class="visually-hidden">Реддит</span>
                       </a>

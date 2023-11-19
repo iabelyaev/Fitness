@@ -6,7 +6,6 @@
   left: -63px;
   background-color: $background-overlay-sapphire;
 
-
   @include vp-1365 {
     width: 266px;
     left: 50%;
@@ -21,7 +20,6 @@
     margin-left: -15px;
     position: static;
   }
-
 
   &::before {
     content: "";
@@ -75,7 +73,6 @@
     border-radius: 50%;
     background: $gradient-button-hover;
     z-index: -1;
-
 
     @include vp-1365 {
       width: 3.25rem;

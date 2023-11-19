@@ -3,7 +3,7 @@ const swiperButtonPrev = document.querySelector('[data-swiper-button-prev="revie
 const swiperButtonNext = document.querySelector('[data-swiper-button-next="reviews"]');
 
 const setSliderReviews = () => {
-  return new window.Swiper(swiperReviews, {
+  const swiperSlierReviews = new window.Swiper(swiperReviews, {
     loop: false,
     slidesPerView: 1,
     navigation: {
@@ -11,6 +11,8 @@ const setSliderReviews = () => {
       prevEl: swiperButtonPrev,
     },
   });
+
+  return swiperSlierReviews;
 };
 
 export const initSliderReviews = () => {

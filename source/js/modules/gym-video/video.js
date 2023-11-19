@@ -1,6 +1,6 @@
 const container = document.querySelector('.about__video');
-const poster = container.querySelector('[data-poster]');
-const button = container.querySelector('[data-button]');
+const poster = container.querySelector('[data-poster="video"]');
+const button = container.querySelector('[data-button="btn-video"]');
 
 const createVideo = () => {
   const iframeElement = document.createElement('iframe');
